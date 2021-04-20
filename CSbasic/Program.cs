@@ -8,7 +8,7 @@ namespace CSbasic
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
+            //#1
             //keyworld
             //int as;
             //context keyword
@@ -29,12 +29,42 @@ namespace CSbasic
             /*
              * comment
              */
-
+            
+            //#2
             Console.Write("이건 안개행");
             Console.WriteLine("");
             Console.WriteLine("와");
 
+            //#3 자료형(Datatype)
+            Console.WriteLine(54 + 32 - 145);
+            Console.WriteLine(43 * 33 - 4);
+            Console.WriteLine(14 / 2); //7
+            Console.WriteLine(14 / 3); //4
+            Console.WriteLine(14 % 3); //2
 
+            //Reallnumber
+            Console.WriteLine(13.123);
+            Console.WriteLine(0);
+            Console.WriteLine(0.0);
+            Console.WriteLine(14 / 2.0);
+            Console.WriteLine(14.0 / 3.0);
+            //14.0 % 12.0
+            Console.WriteLine(14 / 3);      //4
+            Console.WriteLine(14.0 / 3);    //4.6666
+            Console.WriteLine(14 / 3.0);    //4.6666    
+            Console.WriteLine(14.0 / 3.0);  //4.6666
+
+            //character
+            Console.WriteLine('A');     //문자
+            Console.WriteLine("A");     //문자열
+            //Escape Character
+            Console.WriteLine("\t \\ \n \"");
+            Console.WriteLine("미\t림여자정보과학고");
+            Console.WriteLine("미림\t여자정보과학고");
+            Console.WriteLine("미림여\t자정보과학고");
+            Console.WriteLine("미림여자\t정보과학고");
+            Console.WriteLine("미림여자정\t보과학고");
+            Console.WriteLine("미림여자정보\t과학고");
         }
     }
 }
