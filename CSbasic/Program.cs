@@ -30,6 +30,9 @@ namespace CSbasic
              * comment
              */
 
+            Console.Write("이건 안개행");
+            Console.WriteLine("");
+            Console.WriteLine("와");
 
 
         }
