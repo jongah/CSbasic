@@ -65,6 +65,14 @@ namespace CSbasic
             Console.WriteLine("미림여자\t정보과학고");
             Console.WriteLine("미림여자정\t보과학고");
             Console.WriteLine("미림여자정보\t과학고");
+            //문자열 연결 연산자
+            //contenation operator
+            Console.WriteLine("hello" + "world");
+            Console.WriteLine('A' + 'a');
+            //bpp;
+            //true//false
+
+            
         }
     }
 }
