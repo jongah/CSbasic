@@ -72,7 +72,24 @@ namespace CSbasic
             //bpp;
             //true//false
 
-            
+            //자료형
+            int a = 2147483640;
+            int b = 100000000;
+            Console.WriteLine((long)a + b);
+            Console.WriteLine(int.MinValue + " " +  int.MaxValue);
+            //Console.WriteLine(-int.MinValue + " " + -int.MaxValue);
+            Console.WriteLine(3L);
+
+            Console.WriteLine(3);
+            Console.WriteLine(3.0);
+            Console.WriteLine('a');
+            Console.WriteLine("a");
+
+            //sizeof(자료형)
+            Console.WriteLine(sizeof(int));
+            Console.WriteLine(sizeof(char));
+            Console.WriteLine(sizeof(long));
+            Console.WriteLine(sizeof(double));
         }
     }
 }
