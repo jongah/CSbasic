@@ -111,6 +111,22 @@ namespace CSbasic
             output1 += "world";
             output1 = output1 + "!!";
             Console.WriteLine(output1);
+
+            //자료형 검사
+            int _int = 345;
+            long _long = 324342550099;
+            double _double = 0.2334;
+            float _float = 3.434214f;
+            char _char = 'w';
+            string _string = "helloworld";
+
+            Console.WriteLine(_int.GetType());
+            Console.WriteLine(_long.GetType());
+            Console.WriteLine(_double.GetType());
+            Console.WriteLine(_float.GetType());
+            Console.WriteLine(_char.GetType());
+            Console.WriteLine(_string.GetType());
+
         }
     }
 }
