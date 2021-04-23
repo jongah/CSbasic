@@ -97,6 +97,20 @@ namespace CSbasic
             Console.WriteLine(num--);
             Console.WriteLine(--num);
             Console.WriteLine(++num);
+
+            //복합대입연산자
+            int output = 0;
+            output += 52;
+            output = output + 52;
+            output *= 30;
+            output = output * 30;
+            Console.WriteLine(output);
+
+            //문자열 연결 연산자를 사용한 복합 연산자
+            string output1 = "hello";
+            output1 += "world";
+            output1 = output1 + "!!";
+            Console.WriteLine(output1);
         }
     }
 }
