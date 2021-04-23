@@ -90,6 +90,13 @@ namespace CSbasic
             Console.WriteLine(sizeof(char));
             Console.WriteLine(sizeof(long));
             Console.WriteLine(sizeof(double));
+
+            //증감연산자
+            int num = 10;
+            Console.WriteLine(num++);
+            Console.WriteLine(num--);
+            Console.WriteLine(--num);
+            Console.WriteLine(++num);
         }
     }
 }
