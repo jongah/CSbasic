@@ -130,10 +130,22 @@ namespace CSbasic
             //var키워드 * 반드시 초기화를 시켜줘야한다. ( 초기화 하는 값을 보고 추측하여 할당한다. )
             //메서드 안에서만 선언할 수 있다. -> 지역변수만 사용가능
             //멤버변수는 동적으로 불러온다.
-
             var number = 100;
             var somea = "인간";
             var someb = 3.4234242;
+
+            //
+            string input;
+            while (true)
+            {
+                Console.Write("입력 : ");
+                input = Console.ReadLine();
+                if (input.Equals("q"))
+                    break;
+                else
+                    Console.WriteLine(input);
+
+            }
         }
     }
 }
