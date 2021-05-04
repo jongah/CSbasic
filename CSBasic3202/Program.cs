@@ -76,6 +76,10 @@ namespace CSBasic3202
                     break;
             }
 
+            string input2 = Console.ReadLine();
+            int number = int.Parse(input2);
+            Console.WriteLine((number > 0) ? "자연수" : "자연수 아님");
+
         }
     }
 }
