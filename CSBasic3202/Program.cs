@@ -80,6 +80,25 @@ namespace CSBasic3202
             int number = int.Parse(input2);
             Console.WriteLine((number > 0) ? "자연수" : "자연수 아님");
 
+            Console.Write("입력");
+            string line = Console.ReadLine();
+            if (line.Contains("안녕"))
+            {
+                Console.WriteLine("너도 안녕");
+            }
+            else if (line.Contains("바보"))
+            {
+                Console.WriteLine("너도 바보");
+            }
+            else if (line.Contains("멍청이"))
+            {
+                Console.WriteLine("너도 멍청이");
+            }
+            else if (line.Contains("배고파"))
+            {
+                Console.WriteLine("나도");
+            }
+
         }
     }
 }
