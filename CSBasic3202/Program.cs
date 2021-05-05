@@ -99,6 +99,35 @@ namespace CSBasic3202
                 Console.WriteLine("나도");
             }
 
+            
+            bool isLoop = true;
+
+            while (isLoop)
+            {
+                ConsoleKeyInfo info = Console.ReadKey();
+                switch (info.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        Console.Write("Up");
+                        break;
+                    case ConsoleKey.DownArrow:
+                        Console.Write("Down");
+                        break;
+                    case ConsoleKey.RightArrow:
+                        Console.Write("Right");
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        Console.Write("Left");
+                        break;
+                    case ConsoleKey.Escape:
+                        Console.Write("Escape");
+                        break;
+                    default:
+                        Console.WriteLine("wowowwowo");
+                        isLoop = false;
+                        break;
+                }
+            }
         }
     }
 }
