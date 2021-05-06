@@ -11,7 +11,6 @@ namespace CSbasic3
             int[] intArry = new int[100];
             Console.WriteLine(intArry.Length);
             Console.WriteLine(intArry[99]);
-            Console.WriteLine(intArry[intArry.Length]);
 
             int i = 0; 
             int[] intArray2 = { 44, 55, 66, 77, 88, 99 };
@@ -27,6 +26,11 @@ namespace CSbasic3
                 Console.WriteLine("입력 종료");
                 input = Console.ReadLine();
             } while (input != "exit");
+
+            for(int j = '가';  j <= '힣'; j++)
+            {
+                Console.Write((char)j);
+            }
         }
     }
 }
