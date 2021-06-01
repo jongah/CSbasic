@@ -31,6 +31,7 @@ namespace WindowsFormsApp1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.FormMain = new System.Windows.Forms.Button();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.SuspendLayout();
             // 
             // FormMain
@@ -43,6 +44,13 @@ namespace WindowsFormsApp1
             this.FormMain.UseVisualStyleBackColor = true;
             this.FormMain.Click += new System.EventHandler(this.button2_Click);
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(30, 18);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(183, 17);
+            this.hScrollBar1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -51,12 +59,15 @@ namespace WindowsFormsApp1
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(252, 378);
+            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.FormMain);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "내 프로그램";
+            this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
@@ -65,6 +76,7 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.Button FormMain;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
     }
 }
 
