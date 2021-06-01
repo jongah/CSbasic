@@ -29,13 +29,42 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.FormMain = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // FormMain
+            // 
+            this.FormMain.Location = new System.Drawing.Point(42, 302);
+            this.FormMain.Name = "FormMain";
+            this.FormMain.Size = new System.Drawing.Size(152, 64);
+            this.FormMain.TabIndex = 1;
+            this.FormMain.Text = "맘대로";
+            this.FormMain.UseVisualStyleBackColor = true;
+            this.FormMain.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(252, 378);
+            this.Controls.Add(this.FormMain);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoubleBuffered = true;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "내 프로그램";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button FormMain;
     }
 }
 
