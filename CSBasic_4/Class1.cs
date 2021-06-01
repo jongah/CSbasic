@@ -20,5 +20,6 @@ namespace CSBasic_4
     {
         Product product1 = new Product();
         Product productA = new Product() { name = "짬뽕", price = 5000 };
+
     }
 }

@@ -50,7 +50,31 @@ namespace CSBasic_4
             Console.WriteLine(Math.Abs(-32424));
             Console.WriteLine(Math.Ceiling(54.643));
             Console.WriteLine(Math.Floor(3243.34));
-             
+
+
+            List<Student> students = new List<Student>()
+            {
+                new Student() { name = "dfdf", grade = 1},
+                new Student() { name = "dfdf", grade = 1},
+                new Student() { name = "dfdf", grade = 1},
+                new Student() { name = "dfdf", grade = 1}
+            };
+            students.Add(new Student() { name = "diq", grade = 1 });
+
+            foreach (var item in students)
+                if (item.grade > 1)
+                    students.Remove(item);
+            //카운트는 매번 체크한다. 
+            int a = students.Count;
+            for(int i = 0; i < a; i++)
+            {
+                if (students[i].grade > 1)
+                {
+                    i++;
+                    students.RemoveAt(i);
+                }
+                    
+            }
 
         }
     }
