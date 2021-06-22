@@ -10,6 +10,16 @@ namespace csbasic6
     {
         static void Main(string[] args)
         {
+            MethodExample m = new MethodExample();
+            Console.WriteLine(m.Power(4));
+        }
+        
+    }
+    class MethodExample 
+    {
+        public int Power(int x)
+        {
+            return x * x;
         }
     }
 }
