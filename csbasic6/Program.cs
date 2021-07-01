@@ -31,6 +31,10 @@ namespace csbasic6
             {
                 return (input < 0) ? -input : input;
             }
+            public static double Abs(double input)
+            {
+                return (input < 0) ? -input : input;
+            }
         }
 
     }
@@ -45,6 +49,10 @@ namespace csbasic6
                 output += i;
             }
             return output;
+        }
+        public void TestMethod()
+        {
+            Program.Main(new string[] { "" });
         }
     }
 
