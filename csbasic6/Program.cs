@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace csbasic6
 {
+
+    class Product
+    {
+        public string name;
+        public int price;
+
+        public Product(string name, int price)
+        {
+            this.name = name;
+            this.price = price;
+        }
+    }
     class Program
     {
         public static int instanceMethod()
@@ -36,6 +48,13 @@ namespace csbasic6
                 return (input < 0) ? -input : input;
             }
         }
+        public int MyProperty { get; set; }
+
+        public int area
+        {
+            get { return area; }
+        }
+
 
     }
 
